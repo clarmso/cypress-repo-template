@@ -1,0 +1,26 @@
+{
+  "name": "cypress-repo-template",
+  "version": "1.0.0",
+  "description": "A starter template for writing cypress tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --browser chrome",
+    "pretty-quick": "pretty-quick"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "author": "Clare So",
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/cypress": "6.0.1",
+    "cypress": "5.0.0",
+    "cypress-file-upload": "4.0.7",
+    "eslint-plugin-cypress": "2.11.1",
+    "husky": "4.2.5",
+    "prettier": "2.0.5",
+    "pretty-quick": "3.0.0"
+  }
+}
